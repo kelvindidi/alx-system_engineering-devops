@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "Enter the file(s) you want to add (separated by spaces):"
+read files
+git add $files
+
+echo "Enter the commit message:"
+read message
+git commit -m "$message"
+
+git push
+
